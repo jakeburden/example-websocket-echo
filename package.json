@@ -1,0 +1,31 @@
+{
+  "name": "example-websocket-echo",
+  "version": "1.0.0",
+  "description": "An example app of websockets with a client sending data to the server and the server echoing it back.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build & node index.js",
+    "build": "browserify browser/js/index.js > browser/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jekrb/example-websocket-echo.git"
+  },
+  "keywords": [
+    "example",
+    "websockets",
+    "echo"
+  ],
+  "author": "Jacob Burden <Jacob.JW.Burden@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jekrb/example-websocket-echo/issues"
+  },
+  "homepage": "https://github.com/jekrb/example-websocket-echo#readme",
+  "devDependencies": {
+    "browserify": "^13.0.0"
+  },
+  "dependencies": {
+    "websocket-stream": "^3.1.0"
+  }
+}
